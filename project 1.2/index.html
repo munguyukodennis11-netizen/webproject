@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boys Gaming Arena</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🎮 BOYS GAMING ARENA</h1>
+        <p>Welcome to the Ultimate Gaming Tournament</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#registration">Register Members</a>
+            <a href="#registered">Registered Members</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="card">
+
+            <h2>Gaming Dashboard</h2>
+
+            <div class="dashboard">
+
+                <div class="dashboard-box">
+                    <h3>Total Registered Members</h3>
+                    <p id="totalPlayers">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMBER REGISTRATION -->
+        <section id="registration" class="card">
+
+            <h2>Register Tournament Members</h2>
+
+            <form id="registrationForm">
+
+                <label for="fullname">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter full name"
+                    required
+                >
+
+                <label for="username">Username</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter gaming username"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+                <label for="team">Select Team</label>
+
+                <select id="team" required>
+
+                    <option value="">Choose Team</option>
+                    <option value="Team A">Team A</option>
+                    <option value="Team B">Team B</option>
+                    <option value="Team C">Team C</option>
+                    <option value="Team D">Team D</option>
+                    <option value="Team E">Team E</option>
+
+                </select>
+
+                <button type="submit">
+                    Register Member
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- REGISTERED MEMBERS -->
+        <section id="registered" class="card">
+
+            <h2>Registered Members</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Username</th>
+                            <th>Phone Number</th>
+                            <th>Team</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="playerTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Boys Gaming Arena.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- CONNECT JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
